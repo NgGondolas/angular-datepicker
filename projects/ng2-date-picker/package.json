@@ -10,6 +10,7 @@
     "type": "git",
     "url": "https://github.com/NgGondolas/angular-datepicker.git"
   },
+  "sideEffects": false,
   "keywords": [
     "angular2",
     "date",
