@@ -1,6 +1,6 @@
 {
   "name": "@nggondolas/ng2-date-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Jaime 'Gondola' Oliveira",
     "email": "jaime.amo18@gmail.com"
@@ -23,12 +23,12 @@
     "angular-datepicker"
   ],
   "peerDependencies": {
-    "@angular/common": "<= ^15.0.1",
-    "@angular/core": "<= ^15.0.1",
-    "@angular/cdk": "<= ^15.0.0",
-    "dayjs": "<= ^1.11.4"
+    "@angular/common": ">= ^15.0.1",
+    "@angular/core": ">= ^15.0.1",
+    "@angular/cdk": ">= ^15.0.0",
+    "dayjs": ">= ^1.11.4"
   },
   "dependencies": {
-    "tslib": "<= ^2.4.0"
+    "tslib": ">= ^2.0.0"
   }
 }
