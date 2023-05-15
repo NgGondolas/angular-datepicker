@@ -4,14 +4,14 @@
     "name": "Jaime 'Gondola' Oliveira",
     "email": "jaime.amo18@gmail.com"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --o",
     "build": "ng build",
-    "build:lib": "ng build ng2-date-picker",
+    "build:lib": "ng build ng2-date-picker --configuration production",
     "test": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
     "test:ci:lib": "ng test ng2-date-picker --watch=true --browsers=ChromeHeadless",
@@ -23,7 +23,8 @@
     "build:index": "node build.js",
     "build:demo": "rm -rf dist/ && ng build ng2-date-picker-demo --configuration production && npm run build:index",
     "release": "npm run build:lib && cd dist/ng2-date-picker && npm publish",
-    "pack": "cd bin && npm pack"
+    "pack": "cd bin && npm pack",
+    "publish:lib": "npm publish ./dist/ng2-datepicker"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,12 @@
     "picker",
     "angular-datepicker"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org",
+    "yarn": false,
+    "contents": "dist/ng2-date-picker"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.0.1",
     "@angular-devkit/core": "^16.0.1",
