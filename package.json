@@ -94,7 +94,7 @@
     "strictMetadataEmit": true
   },
   "dependencies": {
-    "@angular/cdk": "<= ^15.0.0",
+    "@angular/cdk": "^16.0.1",
     "@angular/common": "^16.0.1",
     "@angular/core": "^16.0.1",
     "dayjs": "<= ^1.11.4"
