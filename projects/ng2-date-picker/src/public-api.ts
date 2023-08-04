@@ -1,12 +1,16 @@
 export {SingleCalendarValue} from './lib/common/types/single-calendar-value';
 export {IDate} from './lib/common/models/date.model';
 export {ECalendarMode} from './lib/common/types/calendar-mode-enum';
+export {CalendarMode} from './lib/common/types/calendar-mode';
+export {TDrops, TOpens} from './lib/common/types/poistions.type';
+export {WeekDays} from './lib/common/types/week-days.type';
 export {IDay} from './lib/day-calendar/day.model';
 export {IMonth} from './lib/month-calendar/month.model';
 export {ECalendarValue} from './lib/common/types/calendar-value-enum';
 export {CalendarValue} from './lib/common/types/calendar-value';
 export {IDayCalendarConfig} from './lib/day-calendar/day-calendar-config.model';
 export {IDayEvent} from './lib/day-calendar/day.model';
+export {INavEvent} from './lib/common/models/navigation-event.model';
 export {IDatePickerConfig} from './lib/date-picker/date-picker-config.model';
 export {IDatePickerDirectiveConfig} from './lib/date-picker/date-picker-directive-config.model';
 export {IMonthCalendarConfig} from './lib/month-calendar/month-calendar-config';
