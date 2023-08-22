@@ -4,7 +4,7 @@
     "name": "Jaime 'Gondola' Oliveira",
     "email": "jaime.amo18@gmail.com"
   },
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
