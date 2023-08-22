@@ -2,6 +2,7 @@ export {SingleCalendarValue} from './lib/common/types/single-calendar-value';
 export {IDate} from './lib/common/models/date.model';
 export {ECalendarMode} from './lib/common/types/calendar-mode-enum';
 export {CalendarMode} from './lib/common/types/calendar-mode';
+export {TDrops, TOpens} from './lib/common/types/poistions.type';
 export {WeekDays} from './lib/common/types/week-days.type';
 export {IDay} from './lib/day-calendar/day.model';
 export {IMonth} from './lib/month-calendar/month.model';
@@ -18,4 +19,3 @@ export {ISelectionEvent} from './lib/common/types/selection-event.model';
 export {SelectEvent} from './lib/common/types/selection-event.enum';
 
 export * from './lib/date-picker.module';
-export * from './lib/common/types/poistions.type';
