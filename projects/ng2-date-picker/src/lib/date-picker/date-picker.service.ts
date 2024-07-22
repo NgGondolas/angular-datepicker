@@ -9,7 +9,7 @@ import {ITimeSelectConfig} from '../time-select/time-select-config.model';
 import {CalendarMode} from '../common/types/calendar-mode';
 import {Dayjs} from 'dayjs';
 import {IDayTimeCalendarConfig} from '../day-time-calendar/day-time-calendar-config.model';
-import {ConnectionPositionPair} from '@angular/cdk/overlay';
+import {ConnectionPositionPair, ScrollStrategyOptions} from '@angular/cdk/overlay';
 
 @Injectable({
   providedIn: 'root'
@@ -33,6 +33,7 @@ export class DatePickerService {
   };
 
   constructor(private readonly utilsService: UtilsService,
+              private readonly scrollOptions: ScrollStrategyOptions,
               private readonly timeSelectService: TimeSelectService,
               private readonly daytimeCalendarService: DayTimeCalendarService) {
   }
@@ -126,6 +127,14 @@ export class DatePickerService {
       overlayX: opens ? opens === 'left' ? 'start' : 'end' : 'start',
       overlayY: drops ? drops === 'up' ? 'bottom' : 'top' : 'top',
     }];
+  }
+
+  getScrollStrategy(scrollStrategyOption: ScrollStrategyOptions): ScrollStrategyOptions {
+    if (scrollStrategyOption && scrollStrategyOption instanceof ScrollStrategyOptions) {
+      return scrollStrategyOption;
+    }
+
+    return this.scrollOptions.noop(); // close, blocking, reposition
   }
 
   private static getDefaultFormatByMode(mode: CalendarMode): string {
