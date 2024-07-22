@@ -19,6 +19,7 @@
                [cdkConnectedOverlayOrigin]="origin || trigger"
                [cdkConnectedOverlayOpen]="areCalendarsShown"
                [cdkConnectedOverlayHasBackdrop]="false"
+               [cdkConnectedOverlayScrollStrategy]="scrollStrategy"
                (overlayOutsideClick)="onBodyClick($event)">
     <div #container>
       <div [attr.data-hidden]="!areCalendarsShown"

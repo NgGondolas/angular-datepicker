@@ -129,9 +129,9 @@ export class DatePickerService {
     }];
   }
 
-  getScrollStrategy(scrollStrategyOption: ScrollStrategyOptions): ScrollStrategyOptions {
-    if (scrollStrategyOption && scrollStrategyOption instanceof ScrollStrategyOptions) {
-      return scrollStrategyOption;
+  getScrollStrategy(scrollStrategy: ScrollStrategy): ScrollStrategy {
+    if (scrollStrategy) {
+      return scrollStrategy;
     }
 
     return this.scrollOptions.noop(); // close, blocking, reposition
