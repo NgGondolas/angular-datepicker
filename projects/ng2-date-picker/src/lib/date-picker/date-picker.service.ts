@@ -9,7 +9,7 @@ import {ITimeSelectConfig} from '../time-select/time-select-config.model';
 import {CalendarMode} from '../common/types/calendar-mode';
 import {Dayjs} from 'dayjs';
 import {IDayTimeCalendarConfig} from '../day-time-calendar/day-time-calendar-config.model';
-import {ConnectionPositionPair, ScrollStrategyOptions} from '@angular/cdk/overlay';
+import {ConnectionPositionPair, ScrollStrategyOptions, ScrollStrategy} from '@angular/cdk/overlay';
 
 @Injectable({
   providedIn: 'root'

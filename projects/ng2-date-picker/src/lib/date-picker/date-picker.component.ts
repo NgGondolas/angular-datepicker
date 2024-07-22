@@ -52,7 +52,7 @@ import {SelectEvent} from '../common/types/selection-event.enum';
 import {ISelectionEvent} from '../common/types/selection-event.model';
 import {Dayjs, UnitType} from 'dayjs';
 import {dayjsRef} from '../common/dayjs/dayjs.ref';
-import {ConnectionPositionPair, ScrollStrategyOptions} from '@angular/cdk/overlay';
+import {ConnectionPositionPair, ScrollStrategy} from '@angular/cdk/overlay';
 
 @Component({
   selector: 'dp-date-picker',
@@ -125,7 +125,7 @@ export class DatePickerComponent implements OnChanges,
   };
   selectEvent = SelectEvent;
   origin: ElementRef | HTMLElement;
-  scrollStrategy: ScrollStrategyOptions;
+  scrollStrategy: ScrollStrategy;
   private onOpenDelayTimeoutHandler;
 
   constructor(private readonly dayPickerService: DatePickerService,
