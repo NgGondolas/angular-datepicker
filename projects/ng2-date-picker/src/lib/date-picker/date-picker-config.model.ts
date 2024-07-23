@@ -3,7 +3,6 @@ import {IDayCalendarConfig, IDayCalendarConfigInternal} from '../day-calendar/da
 import {IMonthCalendarConfig, IMonthCalendarConfigInternal} from '../month-calendar/month-calendar-config';
 import {ITimeSelectConfig, ITimeSelectConfigInternal} from '../time-select/time-select-config.model';
 import {ElementRef} from '@angular/core';
-import {ScrollStrategy} from '@angular/cdk/overlay';
 
 export interface IConfig {
   closeOnSelect?: boolean;
@@ -18,8 +17,9 @@ export interface IConfig {
   opens?: TOpens;
   hideInputContainer?: boolean;
   hideOnOutsideClick?: boolean;
-  scrollStrategy?: ScrollStrategy;
+  scrollStrategy?: any;
 }
+
 
 export interface IDatePickerConfig extends IConfig,
                                            IDayCalendarConfig,
