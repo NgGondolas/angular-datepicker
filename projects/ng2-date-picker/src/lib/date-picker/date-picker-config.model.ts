@@ -17,7 +17,9 @@ export interface IConfig {
   opens?: TOpens;
   hideInputContainer?: boolean;
   hideOnOutsideClick?: boolean;
+  scrollStrategy?: any;
 }
+
 
 export interface IDatePickerConfig extends IConfig,
                                            IDayCalendarConfig,
